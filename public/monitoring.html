@@ -2,12 +2,13 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		
+
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+	<link type="text/css" rel="stylesheet" href="css/monitoring.css"  media="screen,projection"/>
 	<script type="text/javascript" src="js/materialize.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.js"></script>
-	
+
 	<style>
 		body{
 		margin:0px 200px;
@@ -16,9 +17,9 @@
 			height: 50px;
 			line-height: 50px;
 		}
-		
+
 		*{font-family:'微软雅黑';font-size:12px;color:#626262;}
-		
+
 		.row{
 			height: 60px;
 			margin-left: 0px;
@@ -26,7 +27,7 @@
 			margin-bottom: 0px;
 			background-color:#e3f2fd;
 		}
-		
+
 		hr {
 			display: block;
 			-webkit-margin-before: 0.5em;
@@ -39,7 +40,7 @@
 			border-right-width: 0px;
 			border-bottom-width: 0px;
 			border-left-width:0px;
-			
+
 		}
 	</style>
 </head>
@@ -49,16 +50,20 @@
 		<a><i class="material-icons left">toc</i></a>
 		<i class="center">滁河大桥实时监测数据</i>
 		</div>
-	</nav>	
-	
+	</nav>
+
 	<section>
 		<div class="row" style="padding:0px;">
-			<div class="col s6"><a>current time</a></div>
+			<div class="col s6">
+				<div class="indicator">
+						<span class="title h3">current time</span>
+				</div>
+			</div>
 			<div class="col s6"><a>具体时间值</a></div>
 		</div>
-		
+
 		<hr>
-		
+
 		<div class="row">
 
 			<div class="col s3">
@@ -71,9 +76,9 @@
 					最大最小值
 			</div>
 		</div>
-		
+
 		<hr>
-		
+
 		<div>
 			<div>
 				<div class="row">
@@ -87,7 +92,7 @@
 							</select>
     <!-- <label>Materialize Multiple Select</label> -->
 						</div>
-  
+
    <!-- <label>Browser Select</label> -->
 						    <select class="browser-default" >
 							    <option value="" disabled selected>选择展示方式</option>
@@ -95,7 +100,7 @@
 							    <option value="2">饼图</option>
 							    <option value="3">线性</option>
 						    </select>
-  
+
 					</div>
 
 					<div class="col s12 m8 ">
@@ -104,11 +109,11 @@
 							<a href="#"><i class="material-icons" style="margin:18px 9px;">view_module</i></a>
 							<a href="#"><i class="material-icons" style="margin:18px 9px;">refresh</i></a>
 							<a href="#"><i class="material-icons" style="margin:18px 9px;">more_vert</i></a>
-						
+
 						</span>
 					</div>
 				</div>
-				
+
 				<div style="display: block; width: 860px; height: 460px;">
 					<canvas id="myChart" width="860" height="460" ></canvas>
 					<script>
