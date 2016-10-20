@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>重新修改实时监测内容</title>
-    <link rel="stylesheet" href="css/example.css" media="screen" title="no title">
+    <link rel="stylesheet" href="css/monitor-wsd.css" media="screen" title="no title">
     <link rel="stylesheet" href="css/materialize.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/Chart.js"></script>
+	<script type="text/javascript" src="js/clock.js"></script>
   </head>
   <body>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -20,9 +21,9 @@
     <div class="section">
       <div class="row">
         <div class="col s6">
-          <div class="tile1">
-            <span class="day">2016年10月19日</span>
-            <span class="hour">10:55</span>
+          <div class="tile1" onload="showtime()">
+            <div id="day"></div>
+            <div id="hour"></div>
           </div>
         </div>
 
