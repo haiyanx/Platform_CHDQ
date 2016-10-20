@@ -85,6 +85,21 @@ div.main{
   font-size: 35px;
 }
 
+span.item{
+  font-size: 20px;
+  color: #444;
+}
+
+span.unit{
+  font-size: 18px;
+  color: #444;
+}
+
+span.number{
+  font-size: 22px;
+  color: #444;
+}
+
 .title2{
  display: flex;
  justify-content: center;
